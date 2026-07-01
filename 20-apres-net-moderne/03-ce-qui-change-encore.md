@@ -18,7 +18,9 @@ Le projet passe du format **.NET Framework** (`.vbproj` ancien, `packages.config
 
 ## 2. Les API retirées ou non portées — *point dur*
 
-Certaines API de .NET Framework **n'existent plus** ou n'ont **pas d'équivalent direct** sur .NET moderne. Les cas notables : **.NET Remoting** (retiré), **Code Access Security / CAS** (retiré), l'**isolation par `AppDomain`** (très limitée), une partie du modèle **`System.Configuration`**, et divers scénarios **`System.Drawing`** / **`System.Web`** (Web Forms) propres au monde Framework.
+Certaines API de .NET Framework **n'existent plus** ou n'ont **pas d'équivalent direct** sur .NET moderne. Les cas notables : **.NET Remoting** (supprimé), **Code Access Security (CAS)** (supprimé), l'**isolation par `AppDomain`** (fortement réduite — plus de création de domaines), une partie du modèle **`System.Configuration`**, et **`System.Web`** (ASP.NET **Web Forms**, non porté).
+
+> ⚠️ **`System.Drawing` n'est *pas* dans ce lot.** GDI+ **reste pleinement pris en charge pour les applications WinForms sous Windows** — dessin, couleurs, impression : c'est toute la base des modules 13-14, et rien n'y change. La seule nuance : la bibliothèque **`System.Drawing.Common` n'est plus prise en charge en dehors de Windows** (Linux/macOS, depuis .NET 6 puis définitivement .NET 7). Pour un *legacy* WinForms **Windows-only**, c'est **sans incidence**.
 
 Il faut **distinguer deux situations** :
 
