@@ -1,0 +1,29 @@
+# ─────────────────────────────────────────────────────────────
+# Formation Migration VB6 → VB.NET — .gitattributes
+# Cohérence des fins de ligne pour un dépôt cloné sur Windows/Linux/macOS.
+# (Rappel : le piège CRLF/LF est traité dans l'Annexe F — golden master.)
+# ─────────────────────────────────────────────────────────────
+
+# Par défaut : normalisation automatique, LF stocké dans le dépôt
+* text=auto eol=lf
+
+# Documentation et données → LF
+*.md   text eol=lf
+*.txt  text eol=lf
+*.json text eol=lf
+
+# Code VB6 / VB.NET et fichiers Windows → CRLF (convention de l'écosystème VB/VS)
+*.vb     text eol=crlf
+*.bas    text eol=crlf
+*.cls    text eol=crlf
+*.frm    text eol=crlf
+*.vbproj text eol=crlf
+*.sln    text eol=crlf
+*.bat    text eol=crlf
+*.ps1    text eol=crlf
+
+# Binaires (si un logo/asset local est ajouté) → aucune conversion, aucun diff
+*.png binary
+*.jpg binary
+*.gif binary
+*.pdf binary

@@ -1,0 +1,31 @@
+# ─────────────────────────────────────────────────────────────
+# Formation Migration VB6 → VB.NET — .gitignore
+# Dépôt de documentation (Markdown). Règles d'hygiène + préventives.
+# ─────────────────────────────────────────────────────────────
+
+# Configuration locale de Claude Code (permissions propres à la machine)
+.claude/settings.local.json
+
+# Système d'exploitation
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Éditeurs / IDE
+.vs/
+.vscode/
+.idea/
+*.swp
+*~
+
+# Visual Studio / VB.NET — si des projets d'exemple sont ajoutés plus tard
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+packages/
+*.nupkg
+
+# Fichiers temporaires
+*.tmp
+*.bak
