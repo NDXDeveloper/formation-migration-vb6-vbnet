@@ -47,8 +47,7 @@ c'est viser une cible **plus éloignée** de VB6 — donc multiplier les écarts
 
 .NET Framework partage l'ADN Windows de VB6 : accès au système, **GDI+** pour le dessin, modèle
 d'impression, interactions Win32. Le dessin VB6 (`Line`, `Circle`, `PSet`) se retranscrit  
-directement vers l'objet `Graphics`, et `System.Drawing` **fonctionne sans friction** — là où le  
-même `System.Drawing` sur .NET moderne a connu des restrictions multiplateformes. Pour une  
+directement vers l'objet `Graphics`, et `System.Drawing` **fonctionne sans friction**. Pour une  
 application *legacy* riche en graphismes ou en impression, c'est un atout décisif.
 
 ### 2. La compatibilité COM / ActiveX / OCX maximale
